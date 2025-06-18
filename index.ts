@@ -15,10 +15,8 @@ import { readFileSync } from 'fs'
 import { config as loadEnv } from 'dotenv'
 import { load as loadYaml } from 'js-yaml'
 
-// Load .env
 loadEnv()
 
-// Load YAML config
 type RedirectEntry = { from: string; to: string }
 const rawConfig = readFileSync('./config.yaml', 'utf8')
 const parsedConfig = loadYaml(rawConfig) as { voiceRedirects: RedirectEntry[] }
