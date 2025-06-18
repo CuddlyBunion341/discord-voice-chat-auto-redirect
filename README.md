@@ -1,15 +1,40 @@
-# discord-voice-chat-auto-redirect
+# Voice Redirect Discord Bot
 
-To install dependencies:
+Moves users from one voice channel to another automatically based on YAML config rules.
 
-```bash
-bun install
-```
+## Setup
 
-To run:
+1. **Install Bun**
 
-```bash
-bun run index.ts
-```
+2. **Run:**
+    ```sh
+    bun install
+    ```
 
-This project was created using `bun init` in bun v1.1.29. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+3. **Add `.env`:**
+    ```
+    BOT_TOKEN=your_discord_bot_token
+    ```
+
+4. **Edit `config.yaml` with voice channel ID pairs:**
+    ```yaml
+    voiceRedirects:
+      from: 'CHANNEL_ID_A'
+      to: 'CHANNEL_ID_B'
+    ```
+
+5. **Start bot:**
+    ```sh
+    bun run index.ts
+    ```
+
+## Permissions
+
+- Move Members  
+- Connect  
+- View Channels  
+- Enable "Server Members Intent" in bot settings
+
+## License
+
+MIT
