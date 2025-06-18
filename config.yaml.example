@@ -1,0 +1,5 @@
+voiceRedirects:
+  - from: 'VOICE_CHANNEL_ID_A'
+    to: 'VOICE_CHANNEL_ID_B'
+  - from: 'VOICE_CHANNEL_ID_C'
+    to: 'VOICE_CHANNEL_ID_D'
